@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knitiornary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d79f8e95bd.js" crossorigin="anonymous"></script>
+    <style>
+/*         
+* {
+    border: red solid 2px;
+} */
+/* Jeg styler mit logo */
+.logo {
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Jeg styler min navigationabar */ 
+nav {
+    text-align: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 12px 80px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+nav ul li a{
+    display: flex;
+    flex-direction: row;
+    padding: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    justify-content: center;
+}
+
+nav ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul .dropdown li a{
+    padding: 0 20px;
+    
+}
+
+nav ul .navpunkt:hover .dropdown{
+    display: block;
+}
+
+/* Jeg styler min hover-effekt */
+nav a{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav a:hover, nav a:active {
+    letter-spacing: 5px;
+}
+
+nav a::before,
+nav::after {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+
+}
+
+nav a::before {
+    left: 0;
+}
+
+nav a::after {
+    right: 0;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+    width: 200%;
+}
+
+
+
+/* Jeg definerer min skrifttype og baggrundsfarve */
+body {
+    font-family: "raleway", sans-serif;
+    background-color: #E3E0D8;
+}
+    </style>
+</head>
+<body>
+    <!-- Billede af logo -->
+    <header class="logo">
+        <a href="index.html" aria-label="Hjem">
+            <img src="img/Online-Magazine-logo.png" alt="logo" style="max-width: 180px;">
+        </a>
+    </header>
+
+    <!-- Jeg koder min navigationsbar -->
+    <nav>
+        <ul>
+            <li class="navpunkt"><a href="#">Inden du starter</a>
+                <ul class="dropdown">
+                    <li><a href="saadan-laeser-du-en-strikkeopskrift.html">Sådan læser du en strikkeopskrift</a></li>
+                    <li><a href="#">Strikkefasthed</a></li>
+                </ul>
+            </li>
+
+            <li class="navpunkt"><a href="#">Det skal du bruge</a>
+                <ul class="dropdown">
+                    <li><a href="#">Strikkepinde</a></li>
+                    <li><a href="#">Garn</a></li>
+                    <li><a href="#">Maskemarkører</a></li>
+                    <li><a href="#">Målebånd og saks</a></li>
+                </ul>
+            </li>
+
+            <li class="navpunkt"><a href="#">Lær at strikke</a>
+                <ul class="dropdown">
+                    <li><a href="saadan-slaar-du-masker-op.html">Sådan slår du masker op</a></li>
+                    <li><a href="#">Sådan laver du retmasker</a></li>
+                    <li><a href="#">Sådan laver du vrangmasker</a></li>
+                    <li><a href="#">Sådan laver du ind- og udtagniner</a></li>
+                    <li><a href="#">Sådan laver du ribkant</a></li>
+                    <li><a href="#">Sådan skifter du garn</a></li>
+                    <li><a href="#">Sådan lukker du af</a></li>
+                    <li><a href="#">Hvad hvis jeg laver fejl?</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="begyndervenlige-strikkeopskrifter.html">Begyndervenlige strikkeopskrifter</a></li>
+
+            <li class="navpunkt"><a href="#">Om</a>
+                <ul class="dropdown">
+                    <li><a href="#">Historien om Knitiornary</a></li>
+                    <li><a href="#">Strik vs. hækling</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Knitiornarys favoritter</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <section class="nyhedsbrev">
+            <h3>Tilmeld nyhedsbrev </h3>
+            <form>
+                <input name="name" id="name" placeholder="Navn">
+                <input name="e-mail" id="e-mail" placeholder="E-mail">
+            </form>
+            <button type="button">Tilmeld</button> 
+        </section>
+        
+        <section class="kontakt"> 
+            <h3>Kontakt</h3>
+            <span class="fas fa-phone"></span> <p>12345678</p>
+            <span class="fas fa-envelope"></span> <p>info@knitiornary.dk</p>
+        </section>
+        
+        <section class="sociale-medier">
+            <h3>Se mere på:</h3>
+          
+        </section>
+    </footer>
+</body>
+</html>
