@@ -3,204 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knitiornary</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d79f8e95bd.js" crossorigin="anonymous"></script>
-    <style>
-/*         
-* {
-    border: red solid 2px;
-} */
-/* Jeg styler mit logo */
-.logo {
-    height: 175px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-/* Jeg styler min navigationabar */ 
-nav {
-    text-align: center;
-}
-
-nav a {
-    height: 100%;
-    padding: 12px 80px;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    color: black;
-}
-
-
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-}
-
-nav ul li{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-
-}
-
-nav ul li a{
-    display: flex;
-    flex-direction: row;
-    padding: 18px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    justify-content: center;
-}
-
-nav ul .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-}
-
-nav ul .dropdown li a{
-    padding: 0 20px;
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/page-layout.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <link rel="stylesheet" href="../css/index-main.css">
+    <title>TEST</title>
     
-}
+    <style>
+        
 
-nav ul .navpunkt:hover .dropdown{
-    display: block;
-}
+        /* Navigation links */
+        .navbar .a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-/* Jeg styler min hover-effekt */
-nav a{
-    position: relative;
-    width: 200px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-}
+        /* The subnavigation menu */
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
 
-nav a:hover, nav a:active {
-    letter-spacing: 5px;
-}
+        /* Subnav button */
+        .subnav .subnavbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
 
-nav a::before,
-nav::after {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(255, 0, 0);
+        /* Add a red background color to navigation links on hover */
+        .navbar a:hover, .subnav:hover .subnavbtn {
+            background-color: red;
+        }
 
-}
+        /* Style the subnav content - positioned absolute */
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: red;
+            width: 100%;
+            z-index: 1;
+        }
 
-nav a::before {
-    left: 0;
-}
+        /* Style the subnav links */
+        .subnav-content .a {
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
 
-nav a::after {
-    right: 0;
-}
+        /* Add a grey background color on hover */
+        .subnav-content .a:hover {
+            background-color: #eee;
+            color: black;
+        }
 
-nav a:hover::before,
-nav a:hover::after {
-    width: 200%;
-}
-
-
-
-/* Jeg definerer min skrifttype og baggrundsfarve */
-body {
-    font-family: "raleway", sans-serif;
-    background-color: #E3E0D8;
-}
+        /* When you move the mouse over the subnav container, open the subnav content */
+        .subnav:hover .subnav-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <!-- Billede af logo -->
-    <header class="logo">
-        <a href="index.html" aria-label="Hjem">
-            <img src="img/Online-Magazine-logo.png" alt="logo" style="max-width: 180px;">
-        </a>
+    <header>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <div class="subnav">
+                <a class="subnavbtn" href="cocktails.html">Cocktails</a>
+              <div class="subnav-content">
+                <a class="a" href="#company">Company</a>
+                <a class="a" href="#team">Team</a>
+                <a class="a" href="#careers">Careers</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">Services</button>
+              <div class="subnav-content">
+                <a class="a" href="#bring">Bring</a>
+                <a class="a" href="#deliver">Deliver</a>
+                <a class="a" href="#package">Package</a>
+                <a class="a" href="#express">Express</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">Partners</button>
+              <div class="subnav-content">
+                <a class="a" href="#link1">Link 1</a>
+                <a class="a" href="#link2">Link 2</a>
+                <a class="a" href="#link3">Link 3</a>
+                <a class="a" href="#link4">Link 4</a>
+              </div>
+            </div>
+            <a href="#contact">Contact</a>
+          </div>
     </header>
-
-    <!-- Jeg koder min navigationsbar -->
-    <nav>
-        <ul>
-            <li class="navpunkt"><a href="#">Inden du starter</a>
-                <ul class="dropdown">
-                    <li><a href="saadan-laeser-du-en-strikkeopskrift.html">Sådan læser du en strikkeopskrift</a></li>
-                    <li><a href="#">Strikkefasthed</a></li>
-                </ul>
-            </li>
-
-            <li class="navpunkt"><a href="#">Det skal du bruge</a>
-                <ul class="dropdown">
-                    <li><a href="#">Strikkepinde</a></li>
-                    <li><a href="#">Garn</a></li>
-                    <li><a href="#">Maskemarkører</a></li>
-                    <li><a href="#">Målebånd og saks</a></li>
-                </ul>
-            </li>
-
-            <li class="navpunkt"><a href="#">Lær at strikke</a>
-                <ul class="dropdown">
-                    <li><a href="saadan-slaar-du-masker-op.html">Sådan slår du masker op</a></li>
-                    <li><a href="#">Sådan laver du retmasker</a></li>
-                    <li><a href="#">Sådan laver du vrangmasker</a></li>
-                    <li><a href="#">Sådan laver du ind- og udtagniner</a></li>
-                    <li><a href="#">Sådan laver du ribkant</a></li>
-                    <li><a href="#">Sådan skifter du garn</a></li>
-                    <li><a href="#">Sådan lukker du af</a></li>
-                    <li><a href="#">Hvad hvis jeg laver fejl?</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="begyndervenlige-strikkeopskrifter.html">Begyndervenlige strikkeopskrifter</a></li>
-
-            <li class="navpunkt"><a href="#">Om</a>
-                <ul class="dropdown">
-                    <li><a href="#">Historien om Knitiornary</a></li>
-                    <li><a href="#">Strik vs. hækling</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Knitiornarys favoritter</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Footer -->
-    <footer>
-        <section class="nyhedsbrev">
-            <h3>Tilmeld nyhedsbrev </h3>
-            <form>
-                <input name="name" id="name" placeholder="Navn">
-                <input name="e-mail" id="e-mail" placeholder="E-mail">
-            </form>
-            <button type="button">Tilmeld</button> 
-        </section>
-        
-        <section class="kontakt"> 
-            <h3>Kontakt</h3>
-            <span class="fas fa-phone"></span> <p>12345678</p>
-            <span class="fas fa-envelope"></span> <p>info@knitiornary.dk</p>
-        </section>
-        
-        <section class="sociale-medier">
-            <h3>Se mere på:</h3>
+    <main> 
+        <section class="slideshow">        
+          <div class="slides fade">
+            <a href="#"><img src="../img/spooky-drink3.webp" style="width:100%"></a>
+          </div>
           
+          <div class="slides fade">
+            <a href="#"><img src="../img/mocha-drink.webp" style="width:100%"></a>
+          </div>
+          
+          <div class="slides fade">
+            <a href="#"><img src="../img/gintonic-drink2.webp" style="width:100%"></a>
+          </div>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
         </section>
-    </footer>
+        <article>
+          <section>
+            <div class="section-heading">
+              <span class="line"></span>
+              <span class="section-text">News</span>
+              <span class="line"></span>
+            </div>
+            
+            <div class="row">
+              <div class="column left">
+                <div class="label">
+                  <img src="img/tequila.webp" alt="">
+                  <h3>Tequila</h3>
+                  <p>Tequila er en ikonisk mexicansk spiritus lavet af agaveplanten. Med sin karakteristiske smag og stærke alkoholindhold er tequila elsket verden over. Fra traditionelle margaritas til lækre shots med salt og citron er tequila synonymt med livlig feststemning og uforglemmelige øjeblikke.</p>
+                </div>
+              </div>
+              <div class="column mid">
+                <div class="label">
+                  <img src="img/martini.webp" alt="">
+                  <h3>Martini variationer</h3>
+                  <p>Martinier er en elegant cocktail bestående af gin eller vodka og tør vermouth, serveret i et køligt glas. Den perfekte balance mellem spiritus og vermouth skaber en forfriskende og sofistikeret smagsoplevelse. Martinien er et tidløst valg for dem, der søger klassisk raffinement i deres drinks.</p>
+                </div>
+              </div>
+              <div class="column right">
+                <div class="label">
+                  <img src="img/sjusser.webp" alt="">
+                  <h3>Martini variationer</h3>
+                  <p>Sjusser er en klassisk dansk cocktail lavet af en blanding af sodavand og alkohol efter valg. Denne forfriskende og boblende drink er populær til sociale sammenkomster og fester. Med sin lette smag af alkohol og brusende sodavand er sjusser en favorit blandt både unge og ældre danskere.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column left">
+                <div class="label">
+                  <img src="img/mixing.webp" alt="">
+                  <h3>Opskrifter</h3>
+                  <p>At følge opskrifter på drinks er vigtigt for at sikre den rette balance af ingredienser, smag og alkoholstyrke. Det sikrer konsistens og kvalitet i hver servering og hjælper med at undgå mislykkede eller ubalancerede resultater. Præcision i opskriften garanterer en fornøjelig og velafbalanceret drinkoplevelse hver gang.</p>
+                </div>
+              </div>
+              <div class="column mid">
+                <div class="label">
+                  <img src="img/summer.webp" alt="">
+                  <h3>Sommer drinks</h3>
+                  <p>
+                    Om sommeren er intet mere forfriskende end at nyde drinks i godt selskab under solens varme stråler. Med kølige cocktails og lækre frugtdrinks kan man slappe af og skabe uforglemmelige minder på terrassen, ved stranden eller ved poolen. Det er den perfekte måde at nyde sommerens afslappede stemning på.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+    </main>
+    <footer></footer>
+<script src="js/slideshow.js"></script>
 </body>
-</html>
+</html> 
