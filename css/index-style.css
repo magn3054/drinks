@@ -1,0 +1,77 @@
+:root { /* var(--blue); */
+    --primary: #00F5F5;
+    --secondary: #00FF00;
+    --tertiary: #FFD700;
+    --quaternary: #E32636;
+    --quinary: #FF8000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+body {
+    background-image: url(../img/background-sharp.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none;  /* IE and Edge */
+    /* background-color: #E32636; */
+    /* border: #E32636 solid 2px; */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    margin: 0 auto;
+    display: block;
+    background-color: #55575d;
+    width: 60%;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.19) 20px 0px 10px, rgba(0, 0, 0, 0.23) -20px 0px 10px;
+    z-index: 2;
+    /* background-color: #00FF00; */
+    /* border: #00FF00 solid 2px; */
+} 
+
+
+
+footer{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px -3px 8px;
+    background-color: #FF8000;
+    /* border: #FF8000 solid 2px; */
+}
+
+.catergory-drink {
+    height: 80%;
+    width: auto;
+}
+
+/* .slide{
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} */
+
+/* @keyframes slide {
+    from {
+        transform: translateX(82vw);
+      }
+    to {
+        transform: translateX(-6vw); 
+      }
+}  */
