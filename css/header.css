@@ -31,3 +31,8 @@ nav div {
 div > a:hover {
     text-decoration: underline;
 }
+
+.hjem {
+    text-decoration: underline;
+    color: #92fccd;
+}
