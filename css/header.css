@@ -1,3 +1,5 @@
+/* This file controls the style of the header */
+
 nav {
     font-size: 2rem;
     display: flex;
@@ -30,6 +32,7 @@ nav div {
 
 div > a:hover {
     text-decoration: underline;
+    color: #92fccd;
 }
 
 .hjem {
