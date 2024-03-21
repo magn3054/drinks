@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /test/
+
+User-agent: Adsbot
+Disallow: /test/
+
+Sitemap: https://magn3054.github.io/drinks/sitemap.xml
