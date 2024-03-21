@@ -1,0 +1,20 @@
+/* This file controls the style for the "tequila"-site 
+    between header and footer */
+
+    .headline {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #92fccd;
+        margin: 5rem 1rem 0 1rem;
+        border: 2px solid red;
+    }
+
+    main article {
+        margin: 1rem 1rem 0  1rem;
+        border: 2px solid red;
+    }
+    
+    
