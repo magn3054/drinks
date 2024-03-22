@@ -10,23 +10,23 @@ https://magn3054.github.io/drinks/
 
 Alle html filer er godkendt af html validator dog med to warnings om at jeg mangler h2-h6 text.
 
-<img src="img/readme/htmlcheck-index.png" style="float: left; width: 45%;">
-<img src="img/readme/htmlcheck-cocktails.png" style="float: left; width: 45%;">
-<img src="img/readme/htmlcheck-longdrinks.png" style="float: left; width: 45%;">
-<img src="img/readme/htmlcheck-alkoholtyper.png" style="float: left; width: 45%;">
-<img src="img/readme/htmlcheck-tequila.png" style="float: left; width: 45%;">
-<img src="img/readme/htmlcheck-gin.png" style="float: left; width: 45%;">
+<img src="img/readme/htmlcheck-index.png" style="width: 45%;">
+<img src="img/readme/htmlcheck-cocktails.png" style="width: 45%;">
+<img src="img/readme/htmlcheck-longdrinks.png" style="width: 45%;">
+<img src="img/readme/htmlcheck-alkoholtyper.png" style="width: 45%;">
+<img src="img/readme/htmlcheck-tequila.png" style="width: 45%;">
+<img src="img/readme/htmlcheck-gin.png" style="width: 45%;">
 
 ### CSS
 
 Alle css filer er godkendt af css validator.
 
-<img src="img/readme/csscheck-index.png" style="float: left; width: 45%;">
-<img src="img/readme/csscheck-cocktails.png" style="float: right; width: 45%;">
-<img src="img/readme/csscheck-longdrinks.png" style="float: left; width: 45%;">
-<img src="img/readme/csscheck-alkoholtyper.png" style="float: right; width: 45%;">
-<img src="img/readme/csscheck-tequila.png" style="float: left; width: 45%;">
-<img src="img/readme/csscheck-gin.png" style="float: right; width: 45%;">
+<img src="img/readme/csscheck-index.png" style="width: 45%;">
+<img src="img/readme/csscheck-cocktails.png" style="width: 45%;">
+<img src="img/readme/csscheck-longdrinks.png" style="width: 45%;">
+<img src="img/readme/csscheck-alkoholtyper.png" style="width: 45%;">
+<img src="img/readme/csscheck-tequila.png" style="width: 45%;">
+<img src="img/readme/csscheck-gin.png" style="width: 45%;">
 
 ## Navngivning af mappe og filnavne samt struktur
 
