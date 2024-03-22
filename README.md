@@ -119,7 +119,9 @@ Primært ligger fokus på `@keyframes fade` da denne del gør at billederne fade
 
 Javascript er det der sørger for at nye billeder kommer til og erstatter de gamle.
 Først sætter vi slideIndex til 0, dernæst kører funktionen `showSlides()`
+
 `showSlides()` angiver i som vil blive brugt i loopet, dernæst angiver slides og dots til henholdsvis slides og dot klasserne.
+
 Et loop løber alle elementerne i slides arrayet igennem.
 For hvert slide sættes display CSS-attributten til "none", hvilket skjuler dem fra visningen.
 
