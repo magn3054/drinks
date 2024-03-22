@@ -45,19 +45,27 @@ Css filerne er sorteret efter hvornår selectoren bliver brugt i html'en. I file
 
 ## Highlightede kode
 
-<section class="slideshow">        
-    <div class="slides fade">
-        <a href="https://magn3054.github.io/drinks/stand-by.html"><img src="img/spooky-drink3.webp" alt="Drinks til halloween"></a>
-    </div>
-    <div class="slides fade">
-    <a href="https://magn3054.github.io/drinks/stand-by.html"><img src="img/mocha-drink.webp" alt="Lækre kaffe drinks"></a>
-    </div>
-    <div class="slides fade">
-    <a href="https://magn3054.github.io/drinks/stand-by.html"><img src="img/gintonic-drink2.webp" alt="Friske gin og tonics"></a>
-    </div>
-    <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-    </div>
+```html
+<section class="slideshow">
+  <div class="slides fade">
+    <a href="https://magn3054.github.io/drinks/stand-by.html"
+      ><img src="img/spooky-drink3.webp" alt="Drinks til halloween"
+    /></a>
+  </div>
+  <div class="slides fade">
+    <a href="https://magn3054.github.io/drinks/stand-by.html"
+      ><img src="img/mocha-drink.webp" alt="Lækre kaffe drinks"
+    /></a>
+  </div>
+  <div class="slides fade">
+    <a href="https://magn3054.github.io/drinks/stand-by.html"
+      ><img src="img/gintonic-drink2.webp" alt="Friske gin og tonics"
+    /></a>
+  </div>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
 </section>
+```
