@@ -12,7 +12,7 @@ Instructions on how to use the project. Provide examples and screenshots if appl
 
 Description of the example and how to reproduce it.
 
-![Screenshot 1](/path/to/screenshot1.png)
+![html index](img/readme/htmlcheck-index.png)
 
 ### CSS
 
