@@ -4,6 +4,8 @@
 
 https://magn3054.github.io/drinks/
 
+<img src="img/readme/sitemap-vis.png">
+
 ## HTML & CSS validation
 
 ### HTML
