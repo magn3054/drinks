@@ -56,6 +56,13 @@ Css filerne er sorteret efter hvornår selectoren bliver brugt i html'en. I file
 
 ## Performance
 
+<img src="img/readme/index-performance.png">
+<img src="img/readme/cocktails-performance.png">
+<img src="img/readme/longdrinks-performance.png">
+<img src="img/readme/alkoholtyper-performance.png">
+<img src="img/readme/tequila-performance.png">
+<img src="img/readme/gin-performance.png">
+
 ## Highlightede kode
 
 Koden her er fra index-filen. Den strukturer slideshowet i toppen af siden. Cirklerne der viser brugeren hvilket billede man er på, er blevet stylet inline eftersom det var nemmere og hurtigere da de bare skulle centreres.
