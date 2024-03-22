@@ -1,6 +1,3 @@
-/* This file controls the style of the news display, which rotates between 3 images
-   on the index-site */
-
 .slideshow {
   margin-top: 4rem;
   display: flex;

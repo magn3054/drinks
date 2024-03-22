@@ -1,11 +1,4 @@
-/* This file controls the style of every sites basic layout
-    which includes the header, main-part (body) and footer 
-    and also sets the font */
-
-
-    /* These are variables which I intended on using in the beginning to set the 
-        theme of colors but i ended up hust inserting the hex-value at each 
-        location instead */
+    /* Det her variabler jeg havde planlagt at bruge for nemt at kunne skift temaet af farver hvis jeg ønskede det */
 /* :root {
     --primary: #55575d;
     --secondary: #101015;

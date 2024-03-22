@@ -1,6 +1,3 @@
-/* This file controls the style for the "tequila" and "gin"-site as the layout are
-    completely identical */
-
 .headline {
     display: flex;
     flex-direction: row;
