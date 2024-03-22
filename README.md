@@ -10,8 +10,10 @@ https://magn3054.github.io/drinks/
 
 Alle html filer er godkendt af html validator dog med to warnings om at jeg mangler h2-h6 text.
 
+<div>
 <img src="img/readme/htmlcheck-index.png" style="width: 45%;">
 <img src="img/readme/htmlcheck-cocktails.png" style="width: 45%;">
+</div>
 <img src="img/readme/htmlcheck-longdrinks.png" style="width: 45%;">
 <img src="img/readme/htmlcheck-alkoholtyper.png" style="width: 45%;">
 <img src="img/readme/htmlcheck-tequila.png" style="width: 45%;">
